@@ -1,0 +1,33 @@
+quarkus:
+  http:
+    port: 8081
+
+w3cp:
+  simulation:
+    electrical:
+      phases: 3
+      nominal-voltage: 230.0
+      max-current-per-phase: 32.0
+      initial-energy-import-kwh: 0.0
+  backend:
+    websocket:
+      url: "ws://localhost:8080/w3cp" #"wss://w3cp.web3-energy.com/w3cp"
+  identity:
+    bare-key:
+      type: "ecP256"
+      private-key: "MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQggnYZknymepLRWvdXTg8gJgXcu9ux3PfGKsfvQ5ybyhWhRANCAAS1IhzITXCKYJphZeigueNfE9P5FDIbqQxVQDtX3lVx1oZT_ZPtP_JCvOxZn88JNlLBDhmbsa6nIoMG93-1aOlf"
+      public-key: "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEtSIcyE1wimCaYWXooLnjXxPT-RQyG6kMVUA7V95VcdaGU_2T7T_yQrzsWZ_PCTZSwQ4Zm7GupyKDBvd_tWjpXw"
+    kilt:
+      mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
+      passphrase: "change-me"
+      kid: "#key-1"
+    polkadot:
+      mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
+      passphrase: "asdf" #"${CP_POLKADOT_PASS:change-me-pls}"
+      kid: "#key-1"
+  cp:
+    cp-id: "cp-test-000" # "${CP_ID:cp-default}"
+    identity-type: "polkadot"  # "bare-key", "kilt", or "polkadot"
+    charge-ports:
+      - charge-port-id: 1
+      - charge-port-id: 2

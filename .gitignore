@@ -1,0 +1,22 @@
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+target/
+out/
+dist/
+
+# Dependencies
+node_modules/
+.gradle/
+
+# Logs
+*.log
