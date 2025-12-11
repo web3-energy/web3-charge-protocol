@@ -1,7 +1,7 @@
-# W3CP Specification
+# Web3 Charge Protocol Specification
 Web3 Charge Protocol (W3CP) – A modern, identity-first EV charging protocol designed for simplicity, security, and Web3-native integration.
 
-# Why W3CP
+# Why Web3 Charge Protocol
 ### Let's start with WHY!
 
 The EV charging world deserves better.
